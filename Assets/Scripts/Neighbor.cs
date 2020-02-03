@@ -9,13 +9,13 @@ public class Neighbor : MonoBehaviour
     private float angle = 20.0f; // rotate at angle degrees/second
     private float distance = 5.0f; // distance neighbor can see
     private Vector3 axis = Vector3.forward; // rotation axis
-    private Vector3 origin = transform.position;
+    private Vector3 origin;
     private Vector3 neighborDirection = Vector3.up;
 
     // Start is called before the first frame update
     void Start()
     {
-       
+        origin = transform.position;
     }
 
     // Update is called once per frame
