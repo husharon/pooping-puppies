@@ -28,6 +28,6 @@ public class Neighbor : MonoBehaviour
         Vector2 neighborDirection;
 
 
-
+        return false;
     }
 }
