@@ -5,28 +5,28 @@ using UnityEngine;
 public class Neighbor : MonoBehaviour
 {
 
-    Vector2 neighborDirection;
+    private float angle = 20.0f; // rotate at angle degrees/second
+    private Vector3 axis = Vector3.forward; // rotation axis
+    private Vector3 neighborDirection;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        neighborDirection = Vector3.up;
     }
-
-    float angle = 360.0f; // rotate 360 degrees
-    float time = 1.0f; // Time unit in sec
-    Vector3 axis = Vector3.up; // rotation axis
 
     // Update is called once per frame
     void Update()
     {
         // update neighbor direction by a few degrees every frame
-        gameObject.GetComponent<Transform>().RotateAround(Vector3.zero, axis, angle * Time.deltaTime / time);
-        
-        // need a direction vector
+        transform.RotateAround(Vector3.zero, axis, angle * Time.deltaTime);
 
-
-
+        if (CanSeePuppy())
+        {
+            // do something in PuppyController ? 
+            // start level over ?
+        }
+       
     }
 
     bool CanSeePuppy()
