@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Target
   - Obstacle
+  - Bush
   layers:
   - Default
   - TransparentFX
