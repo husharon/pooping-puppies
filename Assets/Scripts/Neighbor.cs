@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Neighbor : MonoBehaviour
 {
+
+    Vector2 neighborDirection;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,14 +23,17 @@ public class Neighbor : MonoBehaviour
         // update neighbor direction by a few degrees every frame
         gameObject.GetComponent<Transform>().RotateAround(Vector3.zero, axis, angle * Time.deltaTime / time);
         
+        // need a direction vector
+
+
+
     }
 
     bool CanSeePuppy()
     {
         RaycastHit2D hit;
-        Vector2 neighborDirection;
 
 
-
+        return false;
     }
 }
