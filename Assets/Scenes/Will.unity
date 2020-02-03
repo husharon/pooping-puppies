@@ -272,6 +272,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD:Assets/Scenes/Game.unity
+=======
 --- !u!1 &1158867483
 GameObject:
   m_ObjectHideFlags: 0
@@ -2054,3 +2056,4 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b1d4ea28ac43584ca0097ac0d651bca, type: 3}
+>>>>>>> 73d278a7d839006eac7262f21842492b9ea06630:Assets/Scenes/Will.unity
