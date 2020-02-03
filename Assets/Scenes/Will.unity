@@ -301,6 +301,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD:Assets/Scenes/Game.unity
+=======
 --- !u!1 &1158867483
 GameObject:
   m_ObjectHideFlags: 0
@@ -2014,3 +2016,76 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e84161ad69c29714b86f6a92617ad77a, type: 3}
+<<<<<<< HEAD
+=======
+--- !u!1001 &1336643934399792497
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 886803394198914616, guid: 3b1d4ea28ac43584ca0097ac0d651bca,
+        type: 3}
+      propertyPath: m_Name
+      value: red-x
+      objectReference: {fileID: 0}
+    - target: {fileID: 4255723523701388875, guid: 3b1d4ea28ac43584ca0097ac0d651bca,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.0782304
+      objectReference: {fileID: 0}
+    - target: {fileID: 4255723523701388875, guid: 3b1d4ea28ac43584ca0097ac0d651bca,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.33202866
+      objectReference: {fileID: 0}
+    - target: {fileID: 4255723523701388875, guid: 3b1d4ea28ac43584ca0097ac0d651bca,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4255723523701388875, guid: 3b1d4ea28ac43584ca0097ac0d651bca,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4255723523701388875, guid: 3b1d4ea28ac43584ca0097ac0d651bca,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4255723523701388875, guid: 3b1d4ea28ac43584ca0097ac0d651bca,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4255723523701388875, guid: 3b1d4ea28ac43584ca0097ac0d651bca,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4255723523701388875, guid: 3b1d4ea28ac43584ca0097ac0d651bca,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4255723523701388875, guid: 3b1d4ea28ac43584ca0097ac0d651bca,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4255723523701388875, guid: 3b1d4ea28ac43584ca0097ac0d651bca,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4255723523701388875, guid: 3b1d4ea28ac43584ca0097ac0d651bca,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3b1d4ea28ac43584ca0097ac0d651bca, type: 3}
+>>>>>>> 73d278a7d839006eac7262f21842492b9ea06630:Assets/Scenes/Will.unity
+>>>>>>> a63c85ca9a6798848c721270b4d28cf427dfd362
