@@ -8,10 +8,12 @@ public class Target : MonoBehaviour
     SpriteRenderer sr;
     public int score;
     public Sprite successPoop;
+    public GameObject scoreKeeper;
 
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
+        scoreKeeper = GetComponent<GameObject>();
     }
     void OnTriggerEnter2D(Collider2D col)
     {
@@ -20,8 +22,9 @@ public class Target : MonoBehaviour
         {
             sr.sprite = successPoop;
             Debug.Log("Hurray it pooped");
+            //scoreKeeper.GetComponent<ScoreDisplay>().addScore(score);
+
         }
-        
     }
 
     // Update is called once per frame
