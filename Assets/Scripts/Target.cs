@@ -17,6 +17,7 @@ public class Target : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D col)
     {
+
         Debug.Log(col.gameObject.name + " : " + gameObject.name + " : " + Time.time);
         if (col.CompareTag("Poop"))
         {
@@ -26,6 +27,10 @@ public class Target : MonoBehaviour
             scoreKeeper.GetComponent<ScoreDisplay>().addScore(score);
 
         }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
     }
 
     // Update is called once per frame
