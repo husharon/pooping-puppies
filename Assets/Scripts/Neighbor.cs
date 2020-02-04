@@ -8,7 +8,7 @@ public class Neighbor : MonoBehaviour
 
     //private float angle = 20.0f; // rotate at angle degrees/second
     private float speed = 3.0f;
-    private float distance = 5.0f; // distance neighbor can see
+    private float distance = 5.0f;
     private Vector3 axis = Vector3.forward; // rotation axis
     private Vector3 neighborDirection;
     private Vector3 origin;
