@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -727591771753302182}
   m_Layer: 0
   m_Name: red-x
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124,3 +124,4 @@ MonoBehaviour:
   successPoop: {fileID: 21300000, guid: 4b6a2c0aacbe21841b41602477d2eadc, type: 3}
   scoreKeeper: {fileID: 2003495662249641829, guid: 0ef5a8e08657d5f428893f925a4b99e9,
     type: 3}
+  poopedOn: 0
