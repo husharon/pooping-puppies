@@ -3,12 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Target
-  - Obstacle
-  - Bush
-  - Poop
-  - Neighbor
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -18,8 +13,8 @@ TagManager:
   - UI
   - 
   - 
-  - Background
-  - foreground
+  - 
+  - 
   - 
   - 
   - 
