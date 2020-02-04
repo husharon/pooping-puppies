@@ -10,7 +10,7 @@ public class Neighbor : MonoBehaviour
     private float speed = 3.0f;
     private float distance = 5.0f; // distance neighbor can see
     private Vector3 axis = Vector3.forward; // rotation axis
-    private Vector3 neighborDirection = Vector3.up;
+    private Vector3 neighborDirection;
     private Vector3 origin;
 
     // Start is called before the first frame update
@@ -28,6 +28,7 @@ public class Neighbor : MonoBehaviour
         //transform.rotation()
 
         // update neighborDirection variable
+        neighborDirection = transform.right;
         
 
 
