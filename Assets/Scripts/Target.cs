@@ -9,11 +9,11 @@ public class Target : MonoBehaviour
     public int score;
     public Sprite successPoop;
     public GameObject scoreKeeper;
+    public bool poopedOn;
 
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
-        scoreKeeper = GetComponent<GameObject>();
     }
     void OnTriggerEnter2D(Collider2D col)
     {
@@ -22,6 +22,7 @@ public class Target : MonoBehaviour
         {
             sr.sprite = successPoop;
             Debug.Log("Hurray it pooped");
+            poopedOn = true;
             scoreKeeper.GetComponent<ScoreDisplay>().addScore(score);
 
         }

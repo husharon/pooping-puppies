@@ -1,16 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class ScoreDisplay : MonoBehaviour
 {
     // Start is called before the first frame update
     private string welcomeMsg = "Welcome to Poopy Puppy\n Poop on the bushes marked X and get points!";
     private float timeLeft = 60f;
-    private int score;
+    private int score = 0;
+    private GameObject[] targets;
     void Start()
     {
-        score = 0;
+        //score = 0;
+        targets = GameObject.FindGameObjectsWithTag("Target");
     }
     private void OnGUI()
     {
@@ -30,10 +34,28 @@ public class ScoreDisplay : MonoBehaviour
     }
     public void addScore(int targetScore)
     {
+        Debug.Log("Target Score" + targetScore);
         score += targetScore;
+        Debug.Log("Score" + score);
     }
     void Update()
     {
+        checkWin();
         timeLeft -= Time.deltaTime;
+    }
+    void checkWin()
+    {
+        bool completed = true;
+        foreach(GameObject temp in targets)
+        {
+            if (!temp.GetComponent<Target>().poopedOn)
+            {
+                completed = false;
+            }
+        }
+        if (completed)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 }
