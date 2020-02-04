@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PuppyController : MonoBehaviour
 {
-    public float speed = 5;
+    public float speed = 3;
     private Rigidbody2D rb;
     private PolygonCollider2D pc2;
     public Sprite[] frames;

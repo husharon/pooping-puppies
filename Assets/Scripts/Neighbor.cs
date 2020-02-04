@@ -7,7 +7,7 @@ public class Neighbor : MonoBehaviour
 {
 
     //private float angle = 20.0f; // rotate at angle degrees/second
-    private float speed = 3.0f;
+    private float speed = 7.0f;
     private Vector3 axis = Vector3.forward; // rotation axis
 
     // Update is called once per frame
