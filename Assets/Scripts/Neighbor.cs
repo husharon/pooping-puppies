@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class Neighbor : MonoBehaviour
 {
 
-    private float angle = 20.0f; // rotate at angle degrees/second
+    //private float angle = 20.0f; // rotate at angle degrees/second
+    private float speed = 3.0f;
     private float distance = 5.0f; // distance neighbor can see
     private Vector3 axis = Vector3.forward; // rotation axis
     private Vector3 neighborDirection = Vector3.up;
@@ -22,7 +23,13 @@ public class Neighbor : MonoBehaviour
     void Update()
     {
         // update neighbor direction by a few degrees every frame
-        //transform.RotateAround(Vector3.zero, axis, angle * Time.deltaTime); // this rotates the actual object, not a vector
+        transform.Rotate(axis * speed * Time.deltaTime); // this rotates the actual object, not a vector
+
+        //transform.rotation()
+
+        // update neighborDirection variable
+        
+
 
         // use quaternion with neighborDirection ?
 
@@ -35,7 +42,7 @@ public class Neighbor : MonoBehaviour
 
             // player dies, game over
             Debug.Log("Detected puppy");
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
        
     }
@@ -44,7 +51,9 @@ public class Neighbor : MonoBehaviour
     {
         
         RaycastHit2D hit = Physics2D.Raycast(origin, neighborDirection, distance);
+        Debug.DrawRay(origin, neighborDirection, Color.red, 10.0f);
 
+     
         if (hit.collider != null)
         {
             Debug.Log("Hit an object: " + hit.transform.tag);
