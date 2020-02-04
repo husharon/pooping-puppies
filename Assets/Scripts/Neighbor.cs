@@ -9,8 +9,8 @@ public class Neighbor : MonoBehaviour
     private float angle = 20.0f; // rotate at angle degrees/second
     private float distance = 5.0f; // distance neighbor can see
     private Vector3 axis = Vector3.forward; // rotation axis
-    private Vector3 origin;
     private Vector3 neighborDirection = Vector3.up;
+    private Vector3 origin;
 
     // Start is called before the first frame update
     void Start()
@@ -34,19 +34,24 @@ public class Neighbor : MonoBehaviour
             // start level over ?
 
             // player dies, game over
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            Debug.Log("Detected puppy");
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
        
     }
 
     bool CanSeePuppy()
     {
+        //Debug.Log("In CanSeePuppy() method");
         RaycastHit2D hit = Physics2D.Raycast(origin, neighborDirection, distance);
 
         if (hit.collider != null)
         {
+            Debug.Log(hit.collider.name);
+            //Debug.Log("Raycast hit something");
             if (hit.collider.CompareTag("Player"))
             {
+                Debug.Log("Hit player");
                 return true;
             }
         }
