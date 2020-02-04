@@ -52,7 +52,7 @@ public class Neighbor : MonoBehaviour
     {
         
         RaycastHit2D hit = Physics2D.Raycast(origin, neighborDirection, distance);
-        Debug.DrawRay(origin, neighborDirection, Color.red, 10.0f);
+        Debug.DrawRay(origin, neighborDirection, Color.red, 25.0f);
 
      
         if (hit.collider != null)
