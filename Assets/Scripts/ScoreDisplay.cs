@@ -13,7 +13,6 @@ public class ScoreDisplay : MonoBehaviour
     private GameObject[] targets;
     void Start()
     {
-        //score = 0;
         targets = GameObject.FindGameObjectsWithTag("Target");
     }
     private void OnGUI()
