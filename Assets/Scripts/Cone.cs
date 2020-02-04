@@ -30,7 +30,7 @@ public class Cone : MonoBehaviour
             if (hit.collider.CompareTag("Player"))
             {
                 Debug.Log("cat sees dog");
-                Debug.Log(hit.collider.name);
+                Debug.Log(hit.transform.tag);
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
         }
