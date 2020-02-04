@@ -22,7 +22,7 @@ public class Target : MonoBehaviour
         {
             sr.sprite = successPoop;
             Debug.Log("Hurray it pooped");
-            //scoreKeeper.GetComponent<ScoreDisplay>().addScore(score);
+            scoreKeeper.GetComponent<ScoreDisplay>().addScore(score);
 
         }
     }
