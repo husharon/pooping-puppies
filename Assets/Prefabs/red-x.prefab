@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4953940208647837558}
   - component: {fileID: -55772369504267001}
   - component: {fileID: -727591771753302182}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: red-x
   m_TagString: Target
   m_Icon: {fileID: 0}

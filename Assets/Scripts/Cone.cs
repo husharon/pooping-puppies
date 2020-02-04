@@ -19,7 +19,7 @@ public class Cone : Neighbor
         transform.RotateAround(cat.transform.position, cat.transform.right, 100 * Time.deltaTime); 
     }
 
-    void OnTriggerEnter2D(Collider2D col)
+    void OnTriggerStay2D(Collider2D col)
     {
         if (col.gameObject.CompareTag("Player"))
         {
