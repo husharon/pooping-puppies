@@ -18,7 +18,6 @@ public class ScoreDisplay : MonoBehaviour
     private void OnGUI()
     {
         GUI.Label(new Rect(10, 10, 500, 40), welcomeMsg);
-        GUI.Label(new Rect(10, 60, 500, 40), ScoreString());
         GUI.Label(new Rect(10, 110, 500, 40), TimeLeft());
     }
     // Update is called once per frame
