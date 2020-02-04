@@ -7,6 +7,8 @@ TagManager:
   - Target
   - Obstacle
   - Bush
+  - Poop
+  - Neighbor
   layers:
   - Default
   - TransparentFX

@@ -42,13 +42,13 @@ public class Neighbor : MonoBehaviour
 
     bool CanSeePuppy()
     {
-        //Debug.Log("In CanSeePuppy() method");
+        
         RaycastHit2D hit = Physics2D.Raycast(origin, neighborDirection, distance);
 
         if (hit.collider != null)
         {
-            Debug.Log(hit.collider.name);
-            //Debug.Log("Raycast hit something");
+            Debug.Log("Hit an object: " + hit.transform.tag);
+            
             if (hit.collider.CompareTag("Player"))
             {
                 Debug.Log("Hit player");
